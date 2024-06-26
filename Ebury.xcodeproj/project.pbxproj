@@ -65,12 +65,11 @@
 		5B0863042C258A1200F010D0 /* Ebury */ = {
 			isa = PBXGroup;
 			children = (
-				5BCC22642C2B92A400B08EE9 /* Core */,
 				5B0863052C258A1200F010D0 /* EburyApp.swift */,
 				5BCC22592C2B914400B08EE9 /* Common */,
+				5BCC22642C2B92A400B08EE9 /* Core */,
+				5BCC22692C2B958E00B08EE9 /* Resources */,
 				5BCC22602C2B920400B08EE9 /* Screens */,
-				5B0863092C258A1300F010D0 /* Assets.xcassets */,
-				5B0863132C26B3A900F010D0 /* LaunchScreen.storyboard */,
 				5B08630B2C258A1300F010D0 /* Preview Content */,
 			);
 			path = Ebury;
@@ -166,6 +165,15 @@
 				5BCC22672C2B92ED00B08EE9 /* AccountBalance.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5BCC22692C2B958E00B08EE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B0863092C258A1300F010D0 /* Assets.xcassets */,
+				5B0863132C26B3A900F010D0 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
