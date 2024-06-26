@@ -14,24 +14,27 @@ protocol WalletsServiceable {
 
 class WalletsService: WalletsServiceable {
     private let urlSession: URLSession
+    private let baseUrl = "http://localhost:3000"
     
     init(urlSession: URLSession = .shared) {
         self.urlSession = urlSession
     }
     
     func getWallets() async throws -> [APIWallet] {
-        // TODO: implement
-        return []
+        guard let url = URL(string: "\(baseUrl)/wallets") else {
+            throw NetworkError.invalidUrl
+        }
+
+        let response: [APIWallet] = try await urlSession.request(request: URLRequest(url: url))
+        return response
     }
     
     func getWallet(withId id: String) async throws -> APIWallet {
-        // TODO: implement
-        .init(
-            accountId: "",
-            companyName: "",
-            amount: .init(amount: "", currency: ""),
-            creditDebitIndicator: "",
-            datetime: ""
-        )
+        guard let url = URL(string: "\(baseUrl)/wallets/\(id)") else {
+            throw NetworkError.invalidUrl
+        }
+        
+        let response: APIWallet = try await urlSession.request(request: URLRequest(url: url))
+        return response
     }
 }
