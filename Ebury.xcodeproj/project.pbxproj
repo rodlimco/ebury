@@ -27,7 +27,31 @@
 		5BCC227F2C2B9AB000B08EE9 /* WalletMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC227E2C2B9AB000B08EE9 /* WalletMapper.swift */; };
 		5BCC22812C2B9EB300B08EE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22802C2B9EB300B08EE9 /* HomeViewModel.swift */; };
 		5BCC22832C2B9F4500B08EE9 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22822C2B9F4500B08EE9 /* ViewState.swift */; };
+		5BCC229A2C2BFBC700B08EE9 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22992C2BFBC700B08EE9 /* MockError.swift */; };
+		5BCC229C2C2BFBD500B08EE9 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC229B2C2BFBD500B08EE9 /* MockURLProtocol.swift */; };
+		5BCC229E2C2BFBE100B08EE9 /* StubsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC229D2C2BFBE100B08EE9 /* StubsType.swift */; };
+		5BCC22A02C2BFC0700B08EE9 /* TestsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC229F2C2BFC0700B08EE9 /* TestsBundle.swift */; };
+		5BCC22A22C2BFC1A00B08EE9 /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22A12C2BFC1A00B08EE9 /* Bundle+.swift */; };
+		5BCC22A42C2BFC3E00B08EE9 /* URLSession+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22A32C2BFC3E00B08EE9 /* URLSession+.swift */; };
+		5BCC22A62C2BFCB300B08EE9 /* APIWallets.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BCC22A52C2BFCB300B08EE9 /* APIWallets.json */; };
+		5BCC22A82C2BFCD400B08EE9 /* APIWalletDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BCC22A72C2BFCD400B08EE9 /* APIWalletDetail.json */; };
+		5BCC22AA2C2BFCF100B08EE9 /* WalletsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22A92C2BFCF100B08EE9 /* WalletsServiceMock.swift */; };
+		5BCC22AC2C2BFDA900B08EE9 /* APIWallet+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22AB2C2BFDA900B08EE9 /* APIWallet+Dummy.swift */; };
+		5BCC22AE2C2BFDFC00B08EE9 /* APIAmount+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22AD2C2BFDFC00B08EE9 /* APIAmount+Dummy.swift */; };
+		5BCC22B22C2BFE4300B08EE9 /* WalletsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22B12C2BFE4300B08EE9 /* WalletsServiceTests.swift */; };
+		5BCC22B52C2BFF6F00B08EE9 /* WalletsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22B42C2BFF6F00B08EE9 /* WalletsRepositoryTests.swift */; };
+		5BCC22B82C2C01D900B08EE9 /* WalletMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC22B72C2C01D900B08EE9 /* WalletMapperTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BCC228E2C2BFB6300B08EE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B0862FA2C258A1200F010D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B0863012C258A1200F010D0;
+			remoteInfo = Ebury;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B0863022C258A1200F010D0 /* Ebury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ebury.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,10 +75,32 @@
 		5BCC227E2C2B9AB000B08EE9 /* WalletMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMapper.swift; sourceTree = "<group>"; };
 		5BCC22802C2B9EB300B08EE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		5BCC22822C2B9F4500B08EE9 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		5BCC228A2C2BFB6300B08EE9 /* EburyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EburyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCC22992C2BFBC700B08EE9 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		5BCC229B2C2BFBD500B08EE9 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		5BCC229D2C2BFBE100B08EE9 /* StubsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubsType.swift; sourceTree = "<group>"; };
+		5BCC229F2C2BFC0700B08EE9 /* TestsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsBundle.swift; sourceTree = "<group>"; };
+		5BCC22A12C2BFC1A00B08EE9 /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		5BCC22A32C2BFC3E00B08EE9 /* URLSession+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+.swift"; sourceTree = "<group>"; };
+		5BCC22A52C2BFCB300B08EE9 /* APIWallets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APIWallets.json; sourceTree = "<group>"; };
+		5BCC22A72C2BFCD400B08EE9 /* APIWalletDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APIWalletDetail.json; sourceTree = "<group>"; };
+		5BCC22A92C2BFCF100B08EE9 /* WalletsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsServiceMock.swift; sourceTree = "<group>"; };
+		5BCC22AB2C2BFDA900B08EE9 /* APIWallet+Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIWallet+Dummy.swift"; sourceTree = "<group>"; };
+		5BCC22AD2C2BFDFC00B08EE9 /* APIAmount+Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIAmount+Dummy.swift"; sourceTree = "<group>"; };
+		5BCC22B12C2BFE4300B08EE9 /* WalletsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsServiceTests.swift; sourceTree = "<group>"; };
+		5BCC22B42C2BFF6F00B08EE9 /* WalletsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsRepositoryTests.swift; sourceTree = "<group>"; };
+		5BCC22B72C2C01D900B08EE9 /* WalletMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5B0862FF2C258A1200F010D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BCC22872C2BFB6300B08EE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0863042C258A1200F010D0 /* Ebury */,
+				5BCC228B2C2BFB6300B08EE9 /* EburyTests */,
 				5B0863032C258A1200F010D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0863022C258A1200F010D0 /* Ebury.app */,
+				5BCC228A2C2BFB6300B08EE9 /* EburyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,6 +299,107 @@
 			path = Mappers;
 			sourceTree = "<group>";
 		};
+		5BCC228B2C2BFB6300B08EE9 /* EburyTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22AF2C2BFE2500B08EE9 /* Tests */,
+				5BCC22932C2BFB7700B08EE9 /* Utilities */,
+			);
+			path = EburyTests;
+			sourceTree = "<group>";
+		};
+		5BCC22932C2BFB7700B08EE9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22942C2BFB8500B08EE9 /* Dummies */,
+				5BCC22962C2BFB8F00B08EE9 /* Extensions */,
+				5BCC22972C2BFB9600B08EE9 /* Helpers */,
+				5BCC22982C2BFB9C00B08EE9 /* JSONStubs */,
+				5BCC22952C2BFB8B00B08EE9 /* Mocks */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5BCC22942C2BFB8500B08EE9 /* Dummies */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22AB2C2BFDA900B08EE9 /* APIWallet+Dummy.swift */,
+				5BCC22AD2C2BFDFC00B08EE9 /* APIAmount+Dummy.swift */,
+			);
+			path = Dummies;
+			sourceTree = "<group>";
+		};
+		5BCC22952C2BFB8B00B08EE9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22A92C2BFCF100B08EE9 /* WalletsServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5BCC22962C2BFB8F00B08EE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22A12C2BFC1A00B08EE9 /* Bundle+.swift */,
+				5BCC22A32C2BFC3E00B08EE9 /* URLSession+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5BCC22972C2BFB9600B08EE9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22992C2BFBC700B08EE9 /* MockError.swift */,
+				5BCC229B2C2BFBD500B08EE9 /* MockURLProtocol.swift */,
+				5BCC229D2C2BFBE100B08EE9 /* StubsType.swift */,
+				5BCC229F2C2BFC0700B08EE9 /* TestsBundle.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5BCC22982C2BFB9C00B08EE9 /* JSONStubs */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22A52C2BFCB300B08EE9 /* APIWallets.json */,
+				5BCC22A72C2BFCD400B08EE9 /* APIWalletDetail.json */,
+			);
+			path = JSONStubs;
+			sourceTree = "<group>";
+		};
+		5BCC22AF2C2BFE2500B08EE9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22B62C2C01C600B08EE9 /* MappersTests */,
+				5BCC22B32C2BFF4F00B08EE9 /* RepositoryTests */,
+				5BCC22B02C2BFE2E00B08EE9 /* ServiceTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5BCC22B02C2BFE2E00B08EE9 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22B12C2BFE4300B08EE9 /* WalletsServiceTests.swift */,
+			);
+			path = ServiceTests;
+			sourceTree = "<group>";
+		};
+		5BCC22B32C2BFF4F00B08EE9 /* RepositoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22B42C2BFF6F00B08EE9 /* WalletsRepositoryTests.swift */,
+			);
+			path = RepositoryTests;
+			sourceTree = "<group>";
+		};
+		5BCC22B62C2C01C600B08EE9 /* MappersTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC22B72C2C01D900B08EE9 /* WalletMapperTests.swift */,
+			);
+			path = MappersTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,6 +420,24 @@
 			productReference = 5B0863022C258A1200F010D0 /* Ebury.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5BCC22892C2BFB6300B08EE9 /* EburyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BCC22922C2BFB6300B08EE9 /* Build configuration list for PBXNativeTarget "EburyTests" */;
+			buildPhases = (
+				5BCC22862C2BFB6300B08EE9 /* Sources */,
+				5BCC22872C2BFB6300B08EE9 /* Frameworks */,
+				5BCC22882C2BFB6300B08EE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BCC228F2C2BFB6300B08EE9 /* PBXTargetDependency */,
+			);
+			name = EburyTests;
+			productName = EburyTests;
+			productReference = 5BCC228A2C2BFB6300B08EE9 /* EburyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -283,6 +450,10 @@
 				TargetAttributes = {
 					5B0863012C258A1200F010D0 = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					5BCC22892C2BFB6300B08EE9 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 5B0863012C258A1200F010D0;
 					};
 				};
 			};
@@ -300,6 +471,7 @@
 			projectRoot = "";
 			targets = (
 				5B0863012C258A1200F010D0 /* Ebury */,
+				5BCC22892C2BFB6300B08EE9 /* EburyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +484,15 @@
 				5B0863142C26B3A900F010D0 /* LaunchScreen.storyboard in Resources */,
 				5B08630D2C258A1300F010D0 /* Preview Assets.xcassets in Resources */,
 				5B08630A2C258A1300F010D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BCC22882C2BFB6300B08EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BCC22A82C2BFCD400B08EE9 /* APIWalletDetail.json in Resources */,
+				5BCC22A62C2BFCB300B08EE9 /* APIWallets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +523,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BCC22862C2BFB6300B08EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BCC229C2C2BFBD500B08EE9 /* MockURLProtocol.swift in Sources */,
+				5BCC22AE2C2BFDFC00B08EE9 /* APIAmount+Dummy.swift in Sources */,
+				5BCC22A02C2BFC0700B08EE9 /* TestsBundle.swift in Sources */,
+				5BCC22B52C2BFF6F00B08EE9 /* WalletsRepositoryTests.swift in Sources */,
+				5BCC22AA2C2BFCF100B08EE9 /* WalletsServiceMock.swift in Sources */,
+				5BCC22B22C2BFE4300B08EE9 /* WalletsServiceTests.swift in Sources */,
+				5BCC229E2C2BFBE100B08EE9 /* StubsType.swift in Sources */,
+				5BCC22A42C2BFC3E00B08EE9 /* URLSession+.swift in Sources */,
+				5BCC22AC2C2BFDA900B08EE9 /* APIWallet+Dummy.swift in Sources */,
+				5BCC22A22C2BFC1A00B08EE9 /* Bundle+.swift in Sources */,
+				5BCC229A2C2BFBC700B08EE9 /* MockError.swift in Sources */,
+				5BCC22B82C2C01D900B08EE9 /* WalletMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BCC228F2C2BFB6300B08EE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B0863012C258A1200F010D0 /* Ebury */;
+			targetProxy = 5BCC228E2C2BFB6300B08EE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5B08630E2C258A1300F010D0 /* Debug */ = {
@@ -524,6 +732,42 @@
 			};
 			name = Release;
 		};
+		5BCC22902C2BFB6300B08EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAV5LTYADS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodlimco.EburyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ebury.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ebury";
+			};
+			name = Debug;
+		};
+		5BCC22912C2BFB6300B08EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAV5LTYADS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodlimco.EburyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ebury.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ebury";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,6 +785,15 @@
 			buildConfigurations = (
 				5B0863112C258A1300F010D0 /* Debug */,
 				5B0863122C258A1300F010D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BCC22922C2BFB6300B08EE9 /* Build configuration list for PBXNativeTarget "EburyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BCC22902C2BFB6300B08EE9 /* Debug */,
+				5BCC22912C2BFB6300B08EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
