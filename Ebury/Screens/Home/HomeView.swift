@@ -17,8 +17,8 @@ struct HomeView: View {
 
     var body: some View {
         content
-            .onAppear {
-                loadWallets()
+            .task {
+                await viewModel.loadWallets()
             }
             .alert(isPresented: $showErrorAlert) {
                 Alert(
