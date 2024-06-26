@@ -21,12 +21,7 @@ class WalletsRepository: WalletsRepositoryProtocol {
 
     func getWallets() async throws -> [Wallet] {
         let apiWallets = try await service.getWallets()
-//        return WalletMapper.map(apiWallets: apiWallets)
-        return [
-            .init(id: UUID().uuidString, amount: "8000000,50", currency: .usd),
-            .init(id: UUID().uuidString, amount: "8000000,50", currency: .eur),
-            .init(id: UUID().uuidString, amount: "8000000,50", currency: .gbp)
-        ]
+        return WalletMapper.map(apiWallets: apiWallets)
     }
 
     func getWallet(withId id: String) async throws  -> Wallet {

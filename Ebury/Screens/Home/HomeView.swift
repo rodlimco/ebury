@@ -38,7 +38,6 @@ struct HomeView: View {
     private var content: some View {
         switch viewModel.state {
         case .empty:
-            // TODO: implement
             Color.clear
         case .error:
             errorView
