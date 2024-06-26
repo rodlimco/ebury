@@ -16,8 +16,8 @@ struct CurrencyCellView: View {
     
     private var content: some View {
         HStack(spacing: .zero) {
-            Circle()
-                .fill(Color.blue)
+            Image(wallet.currency.iconName)
+                .resizable()
                 .frame(width: 32, height: 32)
                 .padding(.trailing, 8)
             

@@ -59,4 +59,8 @@ enum Currency {
             return "-"
         }
     }
+    
+    var iconName: String {
+        self.abbreviation.lowercased()
+    }
 }
