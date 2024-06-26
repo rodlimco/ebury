@@ -21,13 +21,7 @@ struct SheetContainer<Content: View>: View {
             Spacer()
             content
                 .background(
-                    Color(
-                        red: 250 / 255,
-                        green: 250 / 255,
-                        blue: 250 / 255,
-                        opacity: 1.0
-                    )
-                )
+                    Color("sheet_container_background"))
                 .cornerRadius(24, corners: [.topLeft, .topRight])
         }
         .background(

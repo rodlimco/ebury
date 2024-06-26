@@ -64,14 +64,7 @@ struct HomeView: View {
                             Text("View all")
                                 .font(.body)
                                 .fontWeight(.semibold)
-                                .foregroundColor(
-                                    Color(
-                                        red: 0 / 255,
-                                        green: 190 / 255,
-                                        blue: 240 / 255,
-                                        opacity: 1
-                                    )
-                                )
+                                .foregroundColor(Color("ebury_blue"))
                         }
                     )
                 }

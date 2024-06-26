@@ -28,18 +28,11 @@ struct CurrencyCellView: View {
                 Text(wallet.currency.abbreviation)
                     .font(.body)
                     .fontWeight(.semibold)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(.black)
                 
                 Text(wallet.currency.name)
                     .font(.subheadline)
-                    .foregroundColor(
-                        Color(
-                            red: 142 / 250,
-                            green: 142 / 250,
-                            blue: 147 / 250,
-                            opacity: 1
-                        )
-                    )
+                    .foregroundColor(Color("currency_name"))
             }
             
             Spacer()
@@ -47,7 +40,7 @@ struct CurrencyCellView: View {
             Text(wallet.amount)
                 .font(.title3)
                 .fontWeight(.semibold)
-                .foregroundColor(Color.black)
+                .foregroundColor(.black)
                 .lineLimit(1)
         }
         .padding(16)
@@ -56,12 +49,7 @@ struct CurrencyCellView: View {
         .overlay(
             RoundedRectangle(cornerRadius: 8)
                 .stroke(
-                    Color(
-                        red: 233 / 250,
-                        green: 233 / 250,
-                        blue: 234 / 250,
-                        opacity: 1
-                    ),
+                    Color("currency_cell_border"),
                     lineWidth: 1
                 )
         )

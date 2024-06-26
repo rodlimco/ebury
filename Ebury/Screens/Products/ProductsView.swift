@@ -34,14 +34,7 @@ struct ProductsView: View {
                 Text("We are currently working in more features to offer the best experience")
                     .font(.body)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(
-                        Color(
-                            red: 60 / 250,
-                            green: 60 / 250,
-                            blue: 67 / 250,
-                            opacity: 0.6
-                        )
-                    )
+                    .foregroundColor(.black)
                     .padding(.horizontal, 35)
 
                 Spacer()
