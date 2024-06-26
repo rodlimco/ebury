@@ -1,5 +1,5 @@
 //
-//  AccountBalance.swift
+//  Currency.swift
 //  Ebury
 //
 //  Created by Rodrigo Limpias Cossio on 26/6/24.
@@ -7,11 +7,22 @@
 
 import Foundation
 
-enum AccountBalance: Hashable {
-    case eur(String)
-    case gbp(String)
-    case jpy(String)
-    case usd(String)
+enum Currency {
+    case eur
+    case gbp
+    case jpy
+    case usd
+    case unknown
+    
+    init?(rawValue: String) {
+        switch rawValue.uppercased() {
+        case "EUR": self = .eur
+        case "GBP": self = .gbp
+        case "JPY": self = .jpy
+        case "USD": self = .usd
+        default: self = .unknown
+        }
+    }
     
     var abbreviation: String {
         switch self {
@@ -23,6 +34,8 @@ enum AccountBalance: Hashable {
             return "JPY"
         case .usd:
             return "USD"
+        default:
+            return "-"
         }
     }
     
@@ -36,13 +49,8 @@ enum AccountBalance: Hashable {
             return "Japanese Yen"
         case .usd:
             return "US Dollars"
-        }
-    }
-    
-    var balance: String {
-        switch self {
-        case .eur(let balance), .gbp(let balance), .jpy(let balance), .usd(let balance):
-            return balance
+        default:
+            return "-"
         }
     }
 }
