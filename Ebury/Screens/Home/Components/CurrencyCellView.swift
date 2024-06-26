@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CurrencyCellView: View {
-    let account: AccountBalance
+    let wallet: Wallet
     
     var body: some View {
         content
@@ -25,12 +25,12 @@ struct CurrencyCellView: View {
                 alignment: .leading,
                 spacing: 4
             ) {
-                Text(account.abbreviation)
+                Text(wallet.currency.abbreviation)
                     .font(.body)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.black)
                 
-                Text(account.name)
+                Text(wallet.currency.name)
                     .font(.subheadline)
                     .foregroundColor(
                         Color(
@@ -44,7 +44,7 @@ struct CurrencyCellView: View {
             
             Spacer()
             
-            Text(formattedBalance(account.balance))
+            Text(wallet.amount)
                 .font(.title3)
                 .fontWeight(.semibold)
                 .foregroundColor(Color.black)
@@ -67,39 +67,14 @@ struct CurrencyCellView: View {
         )
         .frame(maxWidth: .infinity, alignment: .leading)
     }
-    
-    // TODO: take this to a ViewModel
-    func formattedBalance(_ balance: String) -> String {
-        let defaultFormattedBalance = balance.replacingOccurrences(of: ".", with: ",")
-        let replacedBalance = balance.replacingOccurrences(of: ",", with: ".")
-        guard let doubleBalance = Double(replacedBalance) else {
-            return defaultFormattedBalance
-        }
-
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.groupingSeparator = ","
-        formatter.decimalSeparator = "."
-        formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 2
-        
-        if doubleBalance >= 100_000_000 {
-            let millions = doubleBalance / 1_000_000
-            guard let formattedBalance = formatter.string(from: NSNumber(value: millions)) else {
-                return defaultFormattedBalance
-            }
-            return "\(formattedBalance)M"
-        } else {
-            guard let formattedBalance = formatter.string(from: NSNumber(value: doubleBalance)) else {
-                return defaultFormattedBalance
-            }
-            return formattedBalance
-        }
-    }
 }
 
 #Preview {
     CurrencyCellView(
-        account: .usd("8000000000,50")
+        wallet: .init(
+            id: UUID().uuidString,
+            amount: "8000000,50",
+            currency: .usd
+        )
     )
 }

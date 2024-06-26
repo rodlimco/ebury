@@ -8,19 +8,48 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject private var viewModel = HomeViewModel()
+    @State private var showErrorAlert = false
     
-    // TODO: implemente ViewModel
-    private let accounts: [AccountBalance] = [
-        .usd("50,000.50"),
-        .eur("8,000.00"),
-        .gbp("20,000.00")
-        ]
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+    }
 
     var body: some View {
         content
+            .onAppear {
+                loadWallets()
+            }
+            .alert(isPresented: $showErrorAlert) {
+                Alert(
+                    title: Text("Error"),
+                    message: Text("There was an error loading your wallets. Please try again."),
+                    dismissButton: .default(
+                        Text("OK"), action: {
+                            showErrorAlert = false
+                            loadWallets()
+                        }
+                    )
+                )
+            }
     }
 
+    @ViewBuilder
     private var content: some View {
+        switch viewModel.state {
+        case .empty:
+            // TODO: implement
+            Color.clear
+        case .error:
+            errorView
+        case .loading:
+            loadingView
+        case .success:
+            sucessView
+        }
+    }
+    
+    private var sucessView: some View {
         SheetContainer {
             VStack(spacing: 16) {
                 HStack {
@@ -48,9 +77,9 @@ struct HomeView: View {
                     )
                 }
                 
-                ForEach(accounts, id: \.self) { account in
-                    NavigationLink(destination: mockAccountDetailView(account: account)) {
-                        CurrencyCellView(account: account)
+                ForEach(viewModel.wallets, id: \.id) { wallet in
+                    NavigationLink(destination: mockAccountDetailView(wallet: wallet)) {
+                        CurrencyCellView(wallet: wallet)
                     }
                 }
             }
@@ -59,10 +88,34 @@ struct HomeView: View {
         }
     }
     
-    private func mockAccountDetailView(account: AccountBalance) -> some View {
+    private var loadingView: some View {
+        SheetContainer {
+            VStack {
+                Spacer()
+                ProgressView()
+                Spacer()
+            }
+            .frame(maxWidth: .infinity)
+        }
+    }
+    
+    private var errorView: some View {
+        Color.clear
+            .onAppear {
+                showErrorAlert = true
+            }
+    }
+    
+    private func mockAccountDetailView(wallet: Wallet) -> some View {
         VStack {
             Text("Account Detail View")
-            Text(account.name)
+            Text(wallet.currency.name)
+        }
+    }
+    
+    private func loadWallets() {
+        Task {
+            await viewModel.loadWallets()
         }
     }
 }
