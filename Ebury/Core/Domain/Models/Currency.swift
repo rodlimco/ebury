@@ -8,6 +8,7 @@
 import Foundation
 
 enum Currency {
+    case chf
     case eur
     case gbp
     case jpy
@@ -16,6 +17,7 @@ enum Currency {
     
     init?(rawValue: String) {
         switch rawValue.uppercased() {
+        case "CHF": self = .chf
         case "EUR": self = .eur
         case "GBP": self = .gbp
         case "JPY": self = .jpy
@@ -26,6 +28,8 @@ enum Currency {
     
     var abbreviation: String {
         switch self {
+        case .chf:
+            return "CHF"
         case .eur:
             return "EUR"
         case .gbp:
@@ -41,6 +45,8 @@ enum Currency {
     
     var name: String {
         switch self {
+        case .chf:
+            return "Swiss Franc"
         case .eur:
             return "Euro"
         case .gbp:
