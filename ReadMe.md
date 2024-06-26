@@ -28,7 +28,7 @@ It supports the **iPhone SE 3rd gen**, ensuring compatibility with the smallest 
   - Implemented using **MVVM** for a clean and maintainable codebase.
 - **Data Retrieval**:
   - Utilizes a local API to simulate network calls, receive, and parse data.
-  - Refer to the server project for more info on how to start it. It can be found in the ZIP for this project and in [GitHub]().
+  - Refer to the server project for more info on how to start it. It can be found in the ZIP for this project and in [GitHub](https://github.com/rodlimco/ebury_api).
 - **Image Loading**:
   - Integrated `SwiftUI`'s built-in `AsyncImage` for efficient image loading.
 - **Code Quality**:
@@ -37,7 +37,7 @@ It supports the **iPhone SE 3rd gen**, ensuring compatibility with the smallest 
   - Implemented unit tests for the data layer.
 
 ## Installation
-1. Start local server. Project can be found [here]() and attached to the ZIP for this project.
+1. Start local server. Project can be found [here](https://github.com/rodlimco/ebury_api) and attached to the ZIP for this project.
 2. Clone the repository.
 3. Open the project in Xcode.
 4. Build and run the app on your preferred simulator or device.
